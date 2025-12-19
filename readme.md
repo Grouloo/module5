@@ -25,19 +25,19 @@ Le backend possède des tests unitaires sur la fonction `calcul`. Leur contenu p
 
 **L'évaluation des tests unitaires est déclenchée par une GitHub Action à chaque nouveau commit.**
 
-## Frontend (port 8080)
+### Frontend (port 8080)
 
 Interface *Streamlit* permettant d'interagir avec le backend.
 
 ![Interface Streamlit](./media/frontend.png)
 
-## Grafana (port 3000)
+### Grafana (port 3000)
 
 Le Grafana permet de monitorer l'utilisation des ressources par le projet.
 
 ![grafana](./media/grafana.png)
 
-## Uptime Kuma (port 3001)
+### Uptime Kuma (port 3001)
 
 L'interface Uptime Kuma permet de surveiller la disponibilité de l'API et d'envoyer des alerts Discord en cas de panne.
 
