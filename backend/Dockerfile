@@ -5,9 +5,10 @@ WORKDIR /app
 COPY . .
 
 # Installation des dépendances
+RUN pip freeze > requirements.txt
 RUN pip install -r requirements.txt
 
-RUN cd backend
+WORKDIR /app/backend
 
 EXPOSE 8000
 
