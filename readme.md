@@ -50,3 +50,5 @@ L'interface Uptime Kuma permet de surveiller la disponibilité de l'API et d'env
 Les tests unitaires sont évalués à chaque commit sur `main`.
 
 La construction et la publication des images Docker des composants Frontend et Backend sont réalisées à chaque publication de tag.
+
+![Dockerhub](./media/dockerhub.png)
