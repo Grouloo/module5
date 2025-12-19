@@ -10,12 +10,12 @@ st.header("Frontend")
 
 with st.form("my_form"):
     st.write("Saisissez un nombre")
-    number = st.int("Saisissez un nombre.")
+    number = st.number_input("Saisissez un nombre.", step=1)
     submitted = st.form_submit_button("Envoyer")
 
     if submitted:
         try:
-            response = requests.post("http://127.0.0.1:80/calcul/", json={"number": number})
+            response = requests.post("http://backend:8000/calcul/", json={"x": number})
             response.raise_for_status()
             json = response.json()
 

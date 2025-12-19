@@ -1,5 +1,5 @@
 import pytest
-from backend.modules.calcul import calcul
+from modules.calcul import calcul
 
 
 def test_two_squared_is_four():

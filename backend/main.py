@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from loguru import logger
 from sys import stderr
 
-from backend.modules.calcul import calcul
+from modules.calcul import calcul
 
 app = FastAPI()
 

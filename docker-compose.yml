@@ -37,9 +37,13 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     networks:
       - app-network
+    expose:
+      - 9090
 
   node-exporter:
     image: prom/node-exporter:latest
+    privileged: true
+    user: root
     container_name: node-exporter
     volumes:
       - /proc:/host/proc:ro
@@ -51,6 +55,8 @@ services:
       - '--path.sysfs=/host/sys'
     networks:
       - app-network
+    expose:
+      - 9100
 
   grafana:
     image: grafana/grafana:latest
